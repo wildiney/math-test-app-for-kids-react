@@ -1,6 +1,8 @@
 import './Screen.css'
 
 import React, { useState, useEffect } from "react"
+import Keyboard from './Keyboard/Keyboard'
+import confetti from "canvas-confetti"
 
 const Screen = () => {
 
@@ -10,17 +12,16 @@ const Screen = () => {
     const [signal, setSignal] = useState("")
     const [answer, setAnswer] = useState("")
     const [score, setScore] = useState(0)
-    const maxNumber = 10
-    const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    const maxNumber = 15
 
     useEffect(() => {
         init()
-    }, [score])
+    }, [])
 
     const init = () => {
         const symbol = ["+", "-"]
         const number01 = Math.round(Math.random() * maxNumber) + 1
-        const number02 = Math.round(Math.random() * maxNumber) + 1
+        const number02 = Math.round(Math.random() * maxNumber)
         const sign = (Math.random() <= 0.5) ? symbol[0] : symbol[1]
         console.log(sign)
 
@@ -50,10 +51,15 @@ const Screen = () => {
         }
         if (res === result) {
             setAnswer("correct")
-            setTimeout(() => { setScore(previous => previous + 10); init() }, 3000)
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: { y: 0.6 }
+            });
+            setTimeout(() => { setScore(previous => previous + 10); init() }, 2000)
         } else {
             setAnswer("incorrect")
-            setTimeout(() => { setScore(previous => previous - 10); init() }, 3000)
+            setTimeout(() => { setScore(previous => previous - 10); init() }, 2000)
         }
 
     }
@@ -76,17 +82,7 @@ const Screen = () => {
                 <div className="numbers"> {num2} </div>
                 <div className={`numbers ${answer}`}> {res} </div>
             </div>
-            <div className="keyboard">
-                {numbers && numbers.map(
-                    (number, key) => {
-                        return <button key={key} onClick={() => addNumber(number)}> {number} </button>
-                    }
-                )}
-                <button onClick={clearNumber}>🆑</button>
-                <button onClick={() => addNumber(0)}> 0 </button>
-                <button onClick={result}>🆗</button>
-
-            </div>
+            <Keyboard addNumber={addNumber} clearNumber={clearNumber} result={result} />
         </>
     )
 }
