@@ -2,10 +2,31 @@ import './Screen.css'
 
 import { useState, useEffect, useCallback } from "react"
 import styled from 'styled-components'
+import confetti from "canvas-confetti"
+
+const ScoreDisplay = styled.div`
+    display:flex;
+    align-items:center;
+    height:100%;
+    width:auto;
+    margin:0 15px;
+    padding:15px;
+    line-height: 100%;
+    background-color: white;
+
+    p{
+      margin:0 auto;
+      span{
+        font-size:40px;
+        font-weight:bold;
+      }
+    }
+    `
 
 const Screen = () => {
   const queryParams = new URLSearchParams(window.location.search);
-  const number: number = Number(queryParams.get('maxnum')) - 1
+  console.log(queryParams.get('maxnum'))
+  const number: number = queryParams.get('maxnum') !== null ? Number(queryParams.get('maxnum')) : 100
 
   const [maxNumber] = useState(number)
   const [num1, setNum1] = useState(Math.round(1 + Math.random() * maxNumber))
@@ -51,12 +72,16 @@ const Screen = () => {
     }
     if (res === result) {
       setAnswer("correct")
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 }
+      });
       setTimeout(() => { setScore(previous => previous + 10); init() }, 2000)
     } else {
       setAnswer("incorrect")
       setTimeout(() => { setScore(previous => previous - 10); init() }, 2000)
     }
-
   }
 
   const addNumber = (number: number) => {
@@ -68,28 +93,10 @@ const Screen = () => {
     setRes(0)
   }
 
-  const Score = styled.div`
-    display:flex;
-    align-items:center;
-    height:100%;
-    width:auto;
-    margin:0 15px;
-    padding:15px;
-    line-height: 100%;
-    background-color: white;
-
-    p{
-      margin:0 auto;
-      span{
-        font-size:40px;
-        font-weight:bold;
-      }
-    }
-    `
 
   return (
     <>
-      <Score><p><span>{score}</span></p></Score>
+      <ScoreDisplay><p><span>{score}</span></p></ScoreDisplay>
       <div className="screen">
         <div className="numbers"> {num1} </div>
         <div className="numbers"> {signal} </div>

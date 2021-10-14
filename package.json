@@ -6,10 +6,7 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "@types/jest": "^27.0.2",
-    "@types/node": "^16.10.9",
-    "@types/react": "^17.0.30",
-    "@types/react-dom": "^17.0.9",
+    "canvas-confetti": "^1.4.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -42,6 +39,11 @@
     ]
   },
   "devDependencies": {
+    "@types/canvas-confetti": "^1.4.2",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.10.9",
+    "@types/react": "^17.0.30",
+    "@types/react-dom": "^17.0.9",
     "@types/react-router-dom": "^5.3.1",
     "@types/styled-components": "^5.1.15"
   }
