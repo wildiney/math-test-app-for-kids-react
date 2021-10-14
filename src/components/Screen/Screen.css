@@ -1,4 +1,4 @@
-.score{
+/* .score{
     display:flex;
     align-items:center;
     height:100%;
@@ -14,7 +14,7 @@
 .score span{
     font-size:40px;
     font-weight:bold;
-}
+} */
 .screen{
     background-image: linear-gradient(to bottom, #e2e2e2,#fff);
     height:100%;
