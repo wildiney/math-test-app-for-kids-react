@@ -1,13 +1,13 @@
-import GlobalStyle from './globalStyles'
 
-import Home from './pages/Home'
+import Header from './components/Layout/Header';
+import Screen from './components/Screen/Screen';
 
-function App() {
+function App () {
   return (
-    <>
-      <GlobalStyle />
-      <Home />
-    </>
+    <div className='flex flex-col mx-auto w-full h-full gap-6'>
+      <Header />
+      <Screen />
+    </div>
   );
 }
 

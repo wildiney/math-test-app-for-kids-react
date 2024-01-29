@@ -15,59 +15,58 @@
     font-size:40px;
     font-weight:bold;
 } */
-.screen{
-    background-image: linear-gradient(to bottom, #e2e2e2,#fff);
-    height:100%;
-    margin:0 15px;
-    padding:15px;
-    color:white;
-    display:flex;
-    flex-wrap:wrap;
+.screen {
+  background-image: linear-gradient(to bottom, #e2e2e2, #fff);
+  height: 100%;
+  margin: 0 15px;
+  padding: 15px;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
 }
-.screen div{
-    border: 2px solid transparent;
+.screen div {
+  border: 2px solid transparent;
 }
-.screen div:nth-child(1){
-    width:100%;
+.screen div:nth-child(1) {
+  width: 100%;
 }
-.screen div:nth-child(2){
-    width:10%;
-    margin-top:-40px;
-    font-size:150px;
-    line-height: 50px;
+.screen div:nth-child(2) {
+  width: 10%;
+  margin-top: -40px;
+  font-size: 150px;
+  line-height: 50px;
 }
-.screen div:nth-child(3){
-    width:90%;
+.screen div:nth-child(3) {
+  width: 90%;
 }
-.screen div:nth-child(4){
-    border-top:2px solid gray;
-    padding-top:20px;
-    width:100%;
+.screen div:nth-child(4) {
+  border-top: 2px solid gray;
+  padding-top: 20px;
+  width: 100%;
 }
 .numbers {
-    text-align:right;
-    font-family: 'VT323', monospace;
-    font-size: 60px;
-    color:darkgray;
-    line-height: 80%;
-    padding:0;
-    margin:0
+  text-align: right;
+  font-family: "VT323", monospace;
+  font-size: 60px;
+  color: darkgray;
+  line-height: 80%;
+  padding: 0;
+  margin: 0;
 }
-.screen div.incorrect{
-border:2px solid red;
+.screen div.incorrect {
+  border: 2px solid red;
 }
-.screen div.correct{
-    border:2px solid green
+.screen div.correct {
+  border: 2px solid green;
 }
-.keyboard{
-    margin:0 15px;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 10px;
-    row-gap: 10px;
+.keyboard {
+  margin: 0 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
 }
-.keyboard button{
-    width:100%;
-    font-size: 30px;
-    font-weight: bold;
+.keyboard button {
+  width: 100%;
+  font-weight: bold;
 }
