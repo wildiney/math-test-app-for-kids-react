@@ -32,6 +32,7 @@ export default defineConfig({
         ]
       }
     })],
+  base: '/math-app',
   server: {
     open: true,
     port: 3000
