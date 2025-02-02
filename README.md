@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# Math Test App for Kids
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bem-vindo ao **Math Test App for Kids**! Este aplicativo foi desenvolvido para ajudar as crianças a praticar e melhorar suas habilidades matemáticas de forma divertida e interativa.
 
-## Available Scripts
+## Funcionalidades
 
-In the project directory, you can run:
+- **Testes de Matemática**: Diversos testes de matemática para diferentes níveis de dificuldade.
+- **Feedback Imediato**: As crianças recebem feedback imediato sobre suas respostas.
+- **Interface Amigável**: Interface intuitiva e fácil de usar para crianças.
+- **Progresso**: Acompanhe o progresso e desempenho ao longo do tempo.
 
-### `yarn start`
+## Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **JavaScript**: Linguagem de programação principal.
+- **CSS**: Estilização do aplicativo.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Como Executar o Projeto
 
-### `yarn test`
+1. Clone o repositório:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  ```bash
+  git clone https://github.com/seu-usuario/math-test-app-for-kids-react.git
+  ```
 
-### `yarn build`
+2. Navegue até o diretório do projeto:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  ```bash
+  cd math-test-app-for-kids-react
+  ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Instale as dependências:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  ```bash
+  npm install
+  ```
 
-### `yarn eject`
+4. Execute o aplicativo:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+  ```bash
+  npm start
+  ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contribuição
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Licença
 
-## Learn More
+Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contato
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Para mais informações, entre em contato pelo email: <seu-email@exemplo.com>
