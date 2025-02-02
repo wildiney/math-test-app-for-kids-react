@@ -1,1 +1,0 @@
-if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/math-test-app-for-kids-react/sw.js', { scope: '/math-test-app-for-kids-react/' })})}
